@@ -1,0 +1,9 @@
+<div class="d-flex flex-column" style="min-width: 350px">
+  <form [formGroup]="form" (ngSubmit)="onFormSubmit()">
+    <div class="form-group">
+      <label for="uid">User Id</label>
+      <input type="text" placeholder="Enter User Id" id="uid" class="form-control" formControlName="uid">
+    </div>
+    <button class="btn btn-danger btn-block mt-3">Sil</button>
+  </form>
+<div>

@@ -1,0 +1,10 @@
+{
+    "/users/createUser": {
+        "target": "http://3e3691156c4f.ngrok.io/",
+        "secure": true,
+        "pathRewrite": {
+        "^/posts": ""
+    },
+        "changeOrigin": true
+    }
+  }

@@ -1,0 +1,29 @@
+<div class="d-flex flex-column" style="min-width: 350px">
+    <form [formGroup]="form" (ngSubmit)="onFormSubmit()">
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" placeholder="Enter Name" id="name" class="form-control" formControlName="name">
+    </div>
+    <div class="form-group">
+        <label for="name">Surname</label>
+        <input type="text" placeholder="Enter Surname" id="surname" class="form-control" formControlName="surname">
+    </div>
+    <div class="form-group">
+        <label for="uid">User Id</label>
+        <input type="text" placeholder="Enter User Id" id="uid" class="form-control" formControlName="uid">
+    </div>
+    <div class="form-group d-flex ">
+        <label for="role">Select Role</label>
+        <select name="role" id="role" class="form-select flex-grow-1 ml-3" formControlName="role">
+        <option value="ROLE_ADMİN">Admin</option>
+        <option value="ROLE_USER">User</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="uid">RFID</label>
+        <input type="text" placeholder="Enter User Id" id="rfid" class="form-control" formControlName="rfid">
+    </div>
+    
+    <button class="btn btn-success btn-block mt-3">Kaydet</button>
+    </form>
+<div>
